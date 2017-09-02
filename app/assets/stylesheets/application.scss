@@ -1,7 +1,8 @@
-/*
- *= require_tree .
+ /*
+ *= require inspinia/animate/animate
  *= require_self
- */
+*/
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap_and_overrides';
+@import 'font-awesome';
+@import 'style';

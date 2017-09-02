@@ -15,10 +15,19 @@ gem 'hamlit-rails',                                                   '~> 0.2.0'
 gem 'uglifier',                                                       '~> 3.2.0'
 gem 'bootstrap-sass',                                                 '~> 3.3.6'
 gem 'autoprefixer-rails'
+gem 'twitter-bootstrap-rails'
+gem 'font-awesome-rails'
 
 #=== CONFIG ====================================================================
 gem 'dotenv-rails',                                                     '~> 2.2'
 gem 'tzinfo-data',               platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#=== FEATURES ==================================================================
+gem 'trailblazer'
+gem 'trailblazer-rails'
+gem 'trailblazer-cells'
+gem 'cells-hamlit'
+gem 'cells-rails'
 
 #=== DEV & TEST ================================================================
 group :development do
@@ -27,11 +36,10 @@ group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen'
-
-
   gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'awesome_print'
 end
 
 group :development, :test do

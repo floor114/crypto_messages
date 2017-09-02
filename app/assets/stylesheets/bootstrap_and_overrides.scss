@@ -1,0 +1,58 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+.tag.label.label-info {
+  background: #f1f1f1;
+  border: 1px solid #ededed;
+  border-radius: 2px;
+  box-shadow: none;
+  color: inherit;
+  cursor: default;
+  line-height: 13px;
+  margin: 3px 0 3px 5px;
+  padding: 3px 20px 3px 5px;
+  position: relative;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  padding: 0px 2px;
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(asset-path('chosen-sprite.png')) -42px 3px no-repeat;
+  font-size: 1px;
+}
+
+.bootstrap-tagsinput {
+  background-color: inherit;
+  border: 1px solid #e4e5e7;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  color: inherit;
+  vertical-align: middle;
+  width: 100%;
+  line-height: 30px;
+  cursor: text;
+  border-radius: 0;
+}
+
+.ibox-title {
+  cursor: pointer;
+}
+
+.popover.editable-container.editable-popup
+.popover-title {
+  margin-top: -1px;
+}
