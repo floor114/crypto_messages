@@ -1,7 +1,4 @@
-module Home
-  module Cell
-    class Index < Trailblazer::Cell
-      property :body
-    end
+module Home::Cell
+  class Index < Trailblazer::Cell
   end
 end

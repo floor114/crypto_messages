@@ -8,10 +8,10 @@ gem 'simple_form',                                                      '~> 3.4'
 
 #=== UI ========================================================================
 gem 'sass-rails',                                                       '~> 5.0'
-gem 'jquery-rails',                                                    '~> 4.2.2'
+gem 'jquery-rails',                                                   '~> 4.2.2'
 gem 'turbolinks',                                                         '~> 5'
-gem 'hamlit',                                                          '~> 2.8.4'
-gem 'hamlit-rails',                                                   '~> 0.2.0'
+gem 'haml',                                  git: 'https://github.com/haml/haml'
+gem 'haml-rails',                                                       '~> 1.0'
 gem 'uglifier',                                                       '~> 3.2.0'
 gem 'bootstrap-sass',                                                 '~> 3.3.6'
 gem 'autoprefixer-rails'
@@ -26,7 +26,7 @@ gem 'tzinfo-data',               platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'trailblazer'
 gem 'trailblazer-rails'
 gem 'trailblazer-cells'
-gem 'cells-hamlit'
+gem 'cells-haml'
 gem 'cells-rails'
 
 #=== DEV & TEST ================================================================

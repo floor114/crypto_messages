@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def render_view(action, options = {})
-    render html: cell(cell_class(action), options.fetch(:model, @model),
+    render html: cell(cell_class(action), options.fetch(:model, @form || @model),
                       layout: options.fetch(:layout, ::Layout::Cell::Application),
                       context: options.except(:layout, :model))
   end

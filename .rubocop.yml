@@ -20,3 +20,5 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Rails:
   Enabled: true
+Style/ClassAndModuleChildren:
+  Enabled: false

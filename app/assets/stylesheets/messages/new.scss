@@ -1,0 +1,28 @@
+/*
+ *= require inspinia/summernote/summernote
+ *= require inspinia/iCheck/custom
+ *= require bootstrap-duration-picker
+*/
+@import 'main';
+
+.form-group.message_visits_left {
+  margin-bottom: 0;
+}
+
+label[for=message_visits_left] {
+  padding-top: 6px;
+  font-weight: normal;
+}
+
+.radios {
+  padding: 0 60px;
+}
+
+.form-group.password {
+  margin-bottom: 3px;
+}
+
+.note-editor {
+  min-height: 0;
+  border-bottom: 1px solid #e7eaec;
+}
