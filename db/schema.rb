@@ -18,11 +18,11 @@ ActiveRecord::Schema.define(version: 20170902120427) do
 
   create_table "messages", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
     t.text     "body"
-    t.integer  "destroy_type", default: 0
+    t.integer  "destroy_type"
     t.integer  "visits_left"
     t.datetime "destroy_date"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

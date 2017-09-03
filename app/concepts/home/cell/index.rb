@@ -1,4 +1,6 @@
-module Home::Cell
-  class Index < Trailblazer::Cell
+class Home
+  class Cell
+    class Index < Trailblazer::Cell
+    end
   end
 end

@@ -1,4 +1,8 @@
 en:
+  activerecord:
+    attributes:
+      message:
+        body: 'Message'
   views:
     copyright: 'Copyright'
     app_name: 'CryptoMessages'
@@ -10,6 +14,8 @@ en:
     fields:
       visits: 'By visits'
       hours: 'By ellapsed hours'
+    actions:
+      created: 'Message was successfuly created.'
   home:
     views:
       title: 'Send messages to your friends secure'
