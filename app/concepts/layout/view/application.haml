@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title= I18n.t('views.app_name')
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag    general_assets_path :css
+    = stylesheet_link_tag    action_assets_path :css
+    = javascript_include_tag 'application'
+    = javascript_include_tag general_assets_path :js
+    = javascript_include_tag action_assets_path :js
+  %body.top-navigation
+    #wrapper
+      #page-wrapper.gray-bg
+        = cell(Layout::Cell::Alerts)
+        = cell(Layout::Cell::Navigation)
+        .wrapper.wrapper-content
+          .container
+            = yield
+        = cell(Layout::Cell::Footer)
+
