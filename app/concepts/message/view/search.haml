@@ -1,0 +1,12 @@
+.animated.fadeInRight
+  .row
+    .col-md-6.col-md-offset-3
+      .ibox.float-e-margins
+        .ibox-title
+          %h5= I18n.t('message.views.search_text')
+        .ibox-content
+          = simple_form_for :search do |f|
+            = f.input :token, placeholder: I18n.t('message.fields.token'), label: false
+            .text-right
+              = f.submit I18n.t('actions.search'), class: 'btn btn-primary'
+

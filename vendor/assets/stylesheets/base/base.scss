@@ -962,6 +962,10 @@ a.close-canvas-menu:hover {
 
 }
 
+.p-b-md {
+  padding-bottom: 25px;
+}
+
 .p-w-lg {
   padding: 0 30px;
 
@@ -1238,6 +1242,25 @@ a.close-canvas-menu:hover {
 
 .m-b-n-xl {
   margin-bottom: -40px;
+}
+
+.border-top {
+  border-top: 1px solid #e7eaec;
+}
+
+.border-left {
+  border-left: 1px solid #e7eaec;
+}
+
+.border-right {
+  border-right: 1px solid #e7eaec;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e7eaec;
+}
+.no-borders {
+  border: none !important;
 }
 
 .space-15 {

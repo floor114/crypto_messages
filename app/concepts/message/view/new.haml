@@ -8,7 +8,7 @@
           = simple_form_for model, html: { class: 'js-create-form' } do |f|
             = text_field_tag :body, nil, class: 'js-summernote', autocomplete: :off
             = f.input :ecnrypted_body, as: :hidden, input_html: { class: 'js-ecnrypted-body' }
-            .p-w-md
+            .p-w-md.p-b-md
               %h4.text-center= I18n.t('message.views.select_type')
               .hr-line-dashed.m-t-xs
               .radios.clearfix
@@ -31,10 +31,9 @@
                   = f.input :destroy_duration, label: false, input_html: { class: 'js-duration' }
               .hr-line-dashed
               .form-group.password
-                = text_field_tag :password, nil, type: :password, class: 'js-password form-control'
-              .clearfix
-                .pull-right
+                = text_field_tag :password, nil, type: :password, placeholder: I18n.t('message.fields.password.encryption'), class: 'js-password form-control'
+                .m-l-xs
                   = check_box_tag :show_password, nil, false, class: 'js-show-password'
                   = label_tag :show_password
-              .text-center.p-xs
+              .text-right
                 = button_tag I18n.t('actions.create'), class: 'btn btn-primary js-submit-button'
