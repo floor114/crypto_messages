@@ -2,7 +2,7 @@ module RenderHelper
   def render_view(action, options = {})
     fetch_operation_result!(options)
     render_now_flashes!(options.fetch(:flashes, operation_flashes))
-    render html: cell(cell_class(action), options.fetch(:model, @form || @model),
+    render html: cell(cell_class(action), options.fetch(:model, cell_model),
                       layout: options.fetch(:layout, ::Layout::Cell::Application),
                       context: options.except(:layout, :model, :result))
   end
@@ -21,6 +21,10 @@ module RenderHelper
   private
 
   attr_reader :op_result
+
+  def cell_model
+    @form.blank? ? @model : @form
+  end
 
   def render_now_flashes!(flashes)
     flash.now.alert = flashes[:alert] if flashes[:alert]

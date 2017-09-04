@@ -11,11 +11,22 @@ en:
     views:
       select_type: 'Select type of destroying'
       create_text: 'Create encrypted message'
+      search_text: 'Search encrypted message'
+      show_text: 'Message - '
+      visits: 'visit'
+      destroy_text:
+        visits: '%{visits} %{word} left'
+        hours: '%{word} left'
     fields:
       visits: 'By visits'
       hours: 'By ellapsed hours'
+      token: 'Token'
+      password:
+        encryption: 'Encryption password'
+        decryption: 'Decryption password'
     actions:
       created: 'Message was successfuly created.'
+      not_found: 'Message was not found.'
   home:
     views:
       title: 'Send messages to your friends secure'
@@ -23,3 +34,5 @@ en:
   actions:
     create: 'Create'
     read: 'Read'
+    search: 'Search'
+    decrypt: 'Decrypt'

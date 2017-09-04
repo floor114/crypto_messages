@@ -1,0 +1,22 @@
+.animated.fadeInRight
+  .row
+    .col-md-6.col-md-offset-3
+      .ibox.float-e-margins
+        .ibox-title
+          %h5
+            = I18n.t('message.views.show_text')
+            %small= id
+          .ibox-tools
+            %span.label.label-muted-light.pull-right= destroy_text
+        .ibox-content.no-padding
+          .p-md
+            %p.js-body.toast-message= body
+          .p-md.border-top.js-decrypt-block
+            = simple_form_for :decrypt do |f|
+              .form-group.password.no-margins
+                = text_field_tag :password, nil, type: :password, placeholder: I18n.t('message.fields.password.decryption'), class: 'js-password form-control'
+                .m-l-xs
+                  = check_box_tag :show_password, nil, false, class: 'js-show-password'
+                  = label_tag :show_password
+              .text-right
+                = button_tag I18n.t('actions.decrypt'), class: 'btn btn-primary js-decrypt-button'
