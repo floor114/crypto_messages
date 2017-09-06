@@ -1,3 +1,5 @@
+require_dependency 'message/operation/delayed_destroy'
+
 class Message
   class Create < Trailblazer::Operation
     class Present < Trailblazer::Operation
@@ -17,9 +19,15 @@ class Message
     step :setup_success_message!
 
     step ::Trailblazer::Operation::Contract::Persist()
+    success :delayed_destroy!
+
     success ::TrailblazerHelpers::Steps::AlertsHandler
 
     private
+
+    def delayed_destroy!(_options, model:, **)
+      ::Message::DelayedDestroy.call(id: model.id)
+    end
 
     def setup_success_message!(options, **)
       options['success_message'] = I18n.t('message.actions.created')

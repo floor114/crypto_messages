@@ -6,7 +6,8 @@ ruby '2.4.1'
 gem 'rails',                                                          '~> 5.0.4'
 gem 'pg',                                                              '~> 0.18'
 gem 'puma',                                                             '~> 3.0'
-gem 'simple_form',                                                      '~> 3.4'
+gem 'sidekiq'
+gem 'redis'
 
 #=== UI ========================================================================
 gem 'sass-rails',                                                       '~> 5.0'
@@ -19,6 +20,7 @@ gem 'bootstrap-sass',                                                 '~> 3.3.6'
 gem 'autoprefixer-rails'
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
+gem 'simple_form',                                                      '~> 3.4'
 
 #=== CONFIG ====================================================================
 gem 'dotenv-rails',                                                     '~> 2.2'
