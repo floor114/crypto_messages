@@ -5,8 +5,7 @@
         .ibox-title
           %h5= I18n.t('message.views.search_text')
         .ibox-content
-          = simple_form_for :search do |f|
-            = f.input :token, placeholder: I18n.t('message.fields.token'), label: false
+          = simple_form_for '', url: find_messages_path, html: { class: 'js-find-form' } do |f|
+            = f.input :id, placeholder: I18n.t('message.fields.token'), label: false, input_html: { class: 'js-token' }
             .text-right
-              = f.submit I18n.t('actions.search'), class: 'btn btn-primary'
-
+              = f.submit I18n.t('actions.find'), class: 'btn btn-primary js-submit-button'

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :messages do
     collection do
       get :search
+      post :find
     end
   end
 end
