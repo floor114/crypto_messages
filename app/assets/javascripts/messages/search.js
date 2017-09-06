@@ -3,8 +3,8 @@
 var MessageSearch = {
   init: function () {
     this.$token = $('.js-token');
-    this.$submitButton = $('.js-submit-button')
-    this.$form = $('.js-find-form')
+    this.$submitButton = $('.js-submit-button');
+    this.$form = $('.js-find-form');
 
     this.initSearch();
   },

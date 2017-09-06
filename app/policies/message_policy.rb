@@ -1,12 +1,14 @@
 class MessagePolicy
   attr_reader :message
-  delegate :visits?, :visits_left, to: :message
+  delegate :visits?, :hours?, :visits_left, to: :message
 
   def initialize(_, message)
     @message = message
   end
 
-  def deleteable?
+  def visit_destroyable?
     visits? && visits_left.zero?
   end
+
+  alias delayed_destroyable? hours?
 end
