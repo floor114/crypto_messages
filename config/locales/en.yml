@@ -33,6 +33,5 @@ en:
       text: 'Try our service for secure delivery of your messages.'
   actions:
     create: 'Create'
-    read: 'Read'
-    search: 'Search'
+    find: 'Find'
     decrypt: 'Decrypt'
